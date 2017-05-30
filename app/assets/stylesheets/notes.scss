@@ -1,0 +1,14 @@
+// Place all the styles related to the Notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.note {
+  width: 40%;
+  height: 130px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+  vertical-align: top;
+  p{
+    text-align: left;
+  }
+
+}

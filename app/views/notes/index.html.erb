@@ -1,0 +1,24 @@
+<h1>Notes</h1>
+
+
+<div id="notes-container">
+
+  <% @notes.each do |note| %>
+    <hr>
+    <div class='note' >
+      <h2><%= note.title %></h2>
+      <div class="text-box" note-id="<%=note.id%>">
+        <p><%= note.body %></p>
+      </div>
+
+    </div>
+  <% end %>
+
+</div>
+
+<div>
+  <form id="new-note">
+    <input id="new-form-title" class="form-control" type="text" name="title" value="" placeholder="Insert note title here...">
+    <button id="new-note-button" class="btn btn-primary" type="submit">Add Note</button>
+  </form>
+</div>
